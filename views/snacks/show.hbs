@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>{{snack.title}}</h1>
+  <a href="/snacks">Back to the Snack Tray</a>
+  <hr>
+  <div class="row">
+    <div class="col-md-2">
+      <img src="{{ snack.image_url }}"
+        alt="{{ snack.name }}"
+        class="poster">
+    </div>
+    <div class="col-md-6">
+      <p>Name: {{snack.name}} </p>
+      <p>Review: {{snack.review_description}} </p>
+      <p>Rating : {{snack.rating}} </p>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+<div class="container">
+  <h1>Add a Snack to the Tray</h1>
+  <a href="/snacks">Return to the Tray</a>
+  <hr>
+  <form method="POST"  action="/snacks" class="well">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" class="form-control" id="name" placeholder="Snack Name">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="image_url">Snack Image</label>
+          <input type="text" name="image_url" class="form-control" id="image_url" placeholder="Snack Image URL">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="review_description">Review</label>
+          <input type="text" name="review_description" class="form-control" id="review_description" placeholder="Enter Description">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <input type="number" name="rating" value="0" min="0" max="5" class="form-control" id="rating" placeholder="Rating 0-5">
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
